@@ -3,7 +3,7 @@ public class Cake {
        This class holds a simulation to this activity using recursion
      */
 
-    private int sliceCake(int numFriends, int numSlices) {
+     public static int sliceCake(int numFriends, int numSlices) {
         if (numSlices >= numFriends) {
             return numSlices;
         }
@@ -13,5 +13,7 @@ public class Cake {
     }
 
     public static void main(String[] args) {
+        int cakeSlices = sliceCake(13, 1);
+        System.out.println(cakeSlices + " slices of cake.");
     }
 }
