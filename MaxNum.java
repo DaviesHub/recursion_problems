@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -11,5 +12,13 @@ public class MaxNum {
         arr.remove(Collections.min(arr.subList(0, 2)));
         return largeNum(arr);
     }
+    public static void main(String[] args) {
+        ArrayList<Integer> arr = new ArrayList<>();
+        arr.add(7);
+        arr.add(4);
+        arr.add(13);
+        arr.add(12);
 
+        System.out.println(largeNum(arr));
+    }
 }
