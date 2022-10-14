@@ -22,6 +22,7 @@ public class ArrSum {
     }
 
     public static void main(String[] args) {
+        // Test case for sumAll function
         ArrayList<Integer> arr2 = new ArrayList<>();
         arr2.add(4);
         arr2.add(7);
@@ -29,5 +30,15 @@ public class ArrSum {
         arr2.add(2);
         arr2.add(5);
         System.out.println(sumAll(arr2));
+
+        // Test case for sumToIndex function
+        ArrayList<Integer> arr3 = new ArrayList<>();
+        arr3.add(4);
+        arr3.add(7);
+        arr3.add(1);
+        arr3.add(2);
+        arr3.add(5);
+        arr3.add(11);
+        System.out.println(sumToIndex(arr3, 4));
     }
 }
